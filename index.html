@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Trivia</title>
+</head>
+
+<body>
+  <!--Navigation-->
+  <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand font-weight-bold" href="#">TRIVIA GAME by &lt _Lou /&gt</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Rules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="addquestion.html">Add sets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Author</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Game main window-->
+  <div id="title-question" class="container text-center bg-info border border-primary rounded-lg">
+    <h1>What Do You Know?</h1>
+  </div>
+  <div class="container bg-info border border-primary rounded-lg" id='questionBox'>
+    <h2 id="question">Question</h2>
+    <div class='container' id='answers'>
+      <div><input type="radio" name="choices" value="A"><span id="choiceA"> Answer1</span></div>
+      <div><input type="radio" name="choices" value="B"><span id="choiceB"> Answer2</span></div>
+      <div><input type="radio" name="choices" value="C"><span id="choiceC"> Answer3</span></div>
+      <div><input type="radio" name="choices" value="D"><span id="choiceD"> Answer4</span></div>
+      <button id="submit" class='btn btn-sm btn-outline-dark'>Submit</button>
+      <h5 id="quizStatus" class='text-right'></h5>
+    </div>
+  </div>
+
+  <div class="container bg-info border border-primary rounded-lg">
+    <div class="container " id='finalMessage' style="display:none">
+      <h3>Your score</h3>
+    </div>
+  </div>
+
+  <div class="container" id="options" style="display:none">
+
+
+    <!--FOOTER-->
+    <footer>
+      <div class="row text-center">
+        <div class='col align-items-center'>
+          <button class='badge badge-pill badge-info'><a class="text-reset text-decoration-none text-size"
+              href="index.html">Retake the quiz!</a></button>
+        </div>
+        <div class='col align-items-center'>
+          <button class='badge badge-pill badge-info'><a class="text-reset text-decoration-none"
+              href="addquestion.html">Contribute to question set!</a></button>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

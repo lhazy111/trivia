@@ -1,0 +1,47 @@
+body {
+  background-image: url("pete-pedroza-701024-unsplash.jpg");
+  background-size: cover;
+}
+
+
+#title-question {
+  margin-top: 3em;
+  margin-bottom: 2em;
+  text-shadow: 2px 2px 6px;
+  box-shadow: 10px 10px 10px;
+}
+
+#question{
+  margin-top: 1rem;
+  margin-bottom: 1em;
+  text-shadow: 2px 2px 6px;
+  
+}
+
+#submit{
+margin-top: 1em;
+box-shadow: 10px 10px 10px;
+}
+
+#submit:hover{
+  box-shadow: 10px 10px 10px black;
+  }
+
+#questionBox{
+
+  box-shadow: 10px 10px 10px;
+}
+
+#add-question{
+  margin-top: 1rem;
+  margin-bottom: 1em;
+}
+
+#addbottom{
+  margin-top: 1em;
+
+}
+
+#options{
+  margin-top: 1em;
+}
